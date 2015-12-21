@@ -2,7 +2,11 @@
 
 __author__ = 'Darren Carpenter'
 __license__ = 'GPL'
+<<<<<<< HEAD
 __version__ = '0.0.1'
+=======
+__version__ = '1.0.0'
+>>>>>>> 1e61d944d1741bcfe3fda8b5c5a5d8905e05e477
 __email__ = 'germz@protonmail.ch'
 
 # Notes: make it so you can play it one player
