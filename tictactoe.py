@@ -55,7 +55,7 @@ while len(available) >= 1:
         firstmoves.append(move1)
         board = str.replace(board, move1, "X", 1)
         print board
-        win1.append(list(itertools.combinations(firstmoves, 3)))
+        win1.append(list(itertools.combinations_with_replacement(firstmoves, 3)))
         x = set(win1[0]) & set(wincollection)
         if len(list(x)) >= 1:
             winner = firstplayer
@@ -66,7 +66,7 @@ while len(available) >= 1:
         secondmoves.append(move2)
         board = str.replace(board, move2, "O", 1)
         print board
-        win2.append(list(itertools.combinations(secondmoves, 3)))
+        win2.append(list(itertools.combinations_with_replacement(secondmoves, 3)))
         y = set(win2[0]) & set(wincollection)
         if len(list(y)) >= 1:
             winner = secondplayer
